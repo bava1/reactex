@@ -1,0 +1,168 @@
+.homepage {
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgb(215, 233, 248);
+    text-align: center;
+}
+
+.homepage h1 {
+    width: 94%;
+    margin: 0 auto;
+    padding: 3% 0 2%;
+    color: rgb(13, 117, 151);
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+.homepage-main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 66%;
+    padding: 0 0 5%;
+    margin: 0 auto;
+}
+
+.homepage-main_card {
+    width: 96%;
+    margin: 10px 5px;   
+}
+
+.homepage-main_card-content {
+    width: 100%;
+    height: 200px; 
+    background-color: rgb(146, 106, 106); 
+}
+
+.homepage-block {
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+    padding: 2% 0;
+}
+
+.homepage-block_img {
+    width: 50%;
+    position: relative;
+}
+
+.homepage-block_img img {
+    width: 90%;
+    padding-top: 5%;
+    padding-left: 7%;
+}
+
+.homepage-block_text {
+    width: 40%;
+    margin: 2% 0;
+}
+
+.homepage-block_text div {
+    font-size: 18px;
+    text-align: start;
+    margin: 20px;
+    padding: 10px;
+    color: rgb(4, 37, 80);
+    border: 2px dashed rgb(66, 121, 241);
+    border-radius: 5px;
+}
+
+
+/* RESPONSIVE */
+@media screen and (max-width: 1440px) {
+
+    .homepage-block {
+        width: 100%;
+        display: flex;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+    .RecipeReviewCard-card-55 {
+        height: 100% !important;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    .homepage-main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto auto;
+        padding: 2% 0;
+    }
+
+    .homepage-block_text div {
+        font-size: 16px;
+        margin: 20px 0 ;
+    }
+
+    .homepage-block_img img {
+        width: 95%;
+        padding-top: 25%;
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .homepage-main {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+        width: 96%;
+        padding: 2% 0;
+    }
+
+    .homepage-main_card {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: 10px auto;   
+    }
+
+    .RecipeReviewCard-card-55 {
+        max-width: 100% !important;
+    }
+
+    .homepage-block {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .homepage-block_img {
+        width: 100%;
+    }
+
+    .homepage-block_text {
+        width: 100%;
+        margin: 2% 0;
+    }
+
+    .homepage-block_text div {
+        font-size: 18px;
+        text-align: start;
+        margin: 20px;
+        padding: 15px;
+    }
+
+    .homepage-block_img img {
+        width: 90%;
+        padding-top: 5%;
+    }
+
+}
+
+@media screen and (max-width: 570px) {
+
+    .homepage-block {
+        width: 98%;
+        margin: 0 auto;
+    }
+
+}
+
+

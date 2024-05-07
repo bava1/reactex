@@ -1,0 +1,24 @@
+.panel {
+    width: 100%;
+    margin: 1% 0;
+    border-radius: 5px;
+}
+
+.panel-text {
+    padding: 2%;
+    border-radius: 3px;
+    font-size: 1rem !important;
+    background-color: rgb(230, 243, 253);
+
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 768px) {
+
+    .panel-text {
+        font-size: .9rem !important;
+    }
+
+}
+

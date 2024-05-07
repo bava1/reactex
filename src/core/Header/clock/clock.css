@@ -1,0 +1,67 @@
+.clock {
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    margin-right: 500px;
+}
+
+.display {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 2% 0 0;
+    color: rgb(42, 177, 211);
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.display-time {
+    padding: 2%;
+}
+
+.display-date {
+    padding: 2%;
+}
+
+.display-time_br {
+    display: none !important;
+}
+
+.panel {
+    width: 30%;
+    padding: 1%;
+    border: 1px solid red;
+}
+
+.panel-main {
+    padding: 1%;
+    color: aqua;
+    border: 1px solid red;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 1440px) {
+
+    .clock {
+        width: 100%;
+        margin-right: 270px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    .clock {
+        width: 100%;
+        margin-right: 200px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .clock {
+        display: none;
+    }
+}
+
+

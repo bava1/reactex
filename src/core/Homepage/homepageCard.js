@@ -1,0 +1,58 @@
+const cardContent = [
+     {
+          id:1,
+          avatar: "R",
+          title: "Component-Based",
+          subheader: "September 14, 2023",
+          image: "https://cdn.pixabay.com/photo/2017/03/23/09/34/artificial-intelligence-2167835_1280.jpg",
+          paragraph1: "React offers a declarative approach to interface creation, breaking it down into reusable components and... ",
+          paragraph2: "This makes it easy to manage the hierarchy of elements, focusing on state and updates rather than DOM manipulations.",
+     },
+     {
+          id:2,
+          avatar: "E",
+          title: "Virtual DOM and Efficiency",
+          subheader: "September 14, 2023",
+          image: "https://cdn-images-1.medium.com/max/2000/1*qXcjSfRj0C0ir2yMsYiRyw.jpeg",
+          paragraph1: "Utilizing a virtual DOM, React optimizes performance by updating only the parts of the interface that have actually. ",
+          paragraph2: "This minimizes browser load and ensures smooth operation even in complex applications.",
+     },  
+     {
+          id:3,
+          avatar: "A",
+          title: "Unidirectional Data Flow",
+          subheader: "September 14, 2023",
+          image: "https://cdn.pixabay.com/photo/2017/08/26/10/47/businessman-2682712_960_720.jpg",
+          paragraph1: "React implements the principle of unidirectional data flow, providing a clear structure for data transmission down... ",
+          paragraph2: "This promotes predictability and simplifies debugging, reducing side effects.",
+     },
+     {
+          id:4,
+          avatar: "C",
+          title: "State Management",
+          subheader: "September 14, 2023",
+          image: "https://cdn.pixabay.com/photo/2015/05/12/09/13/social-media-763731_960_720.jpg",
+          paragraph1: "The introduction of hooks, such as useState and useEffect, makes managing component state simpler and more flexible. ",
+          paragraph2: "This provides a unified mechanism for working with state and component lifecycles.",
+     },
+     {
+          id:5,
+          avatar: "T",
+          title: "Composition and Reusability",
+          subheader: "September 14, 2023",
+          image: "https://cdn.pixabay.com/photo/2018/05/11/09/02/technology-3389904_1280.jpg",
+          paragraph1: "React encourages component composition, enabling the easy creation of complex interfaces from simple... ",
+          paragraph2: "This promotes code reuse and supports project structure cleanliness.",
+     },
+     {
+          id:6,
+          avatar: "X",
+          title: "Ecosystem and Community",
+          subheader: "September 14, 2023",
+          image: "https://cdn.pixabay.com/photo/2018/01/28/10/59/internet-3113279_960_720.jpg",
+          paragraph1: "With a broad community and extensive ecosystem, React provides numerous tools, libraries, and resources. ",
+          paragraph2: "This accelerates development, learning, and knowledge exchange, making React a powerful choice for building modern web...",
+     },
+];
+
+export default cardContent;
