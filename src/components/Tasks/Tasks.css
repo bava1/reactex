@@ -1,0 +1,177 @@
+.tasks {
+    --bg-start: rgb(215, 233, 248);
+    --bg-end: rgb(215, 233, 248);
+    --card: #ffffff;
+    --line: #d8e5f8;
+    --title: #0f3c66;
+    --muted: #5f7692;
+    --shadow: 0 14px 36px rgba(18, 40, 76, 0.14);
+
+    width: 100%;
+    min-height: 100vh;
+    padding: 36px 16px;
+    background-color: var(--bg-start);
+    box-sizing: border-box;
+}
+
+.tasks-shell {
+    width: min(900px, 100%);
+    margin: 0 auto;
+    padding: 28px;
+    border: 1px solid var(--line);
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.72);
+    backdrop-filter: blur(6px);
+    box-shadow: var(--shadow);
+}
+
+.tasks h1 {
+    margin: 0 0 16px;
+    color: var(--title);
+    text-align: center;
+    font-size: clamp(1.7rem, 1.2rem + 1.2vw, 2.2rem);
+    letter-spacing: 0.02em;
+}
+
+.tasks-main {
+    width: min(760px, 100%);
+    margin: 0 auto;
+}
+
+.tasks-main_form {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.tasks-main_form-textinput {
+    flex: 1;
+    background: var(--card);
+    border-radius: 10px;
+}
+
+.tasks-main_form-textinput .MuiOutlinedInput-root {
+    height: 40px;
+}
+
+.tasks-main_form-button {
+    min-width: 124px;
+    height: 40px;
+    text-transform: none !important;
+    font-weight: 600 !important;
+    border-radius: 10px !important;
+    box-shadow: none !important;
+}
+
+.tasks-main_headline {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 18px 2px 8px;
+}
+
+.tasks h3 {
+    margin: 0;
+    color: var(--title);
+    font-size: 1.1rem;
+}
+
+.tasks-main_counter {
+    min-width: 30px;
+    height: 30px;
+    padding: 0 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    font-size: 0.92rem;
+    font-weight: 700;
+    color: #1c5f91;
+    background: #e5f2ff;
+}
+
+.tasks-main_tasks {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.tasks-main_task {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 12px 14px;
+    background: var(--card);
+    border: 1px solid #e3ecfa;
+    border-radius: 12px;
+    transition: transform 0.16s ease, box-shadow 0.16s ease;
+}
+
+.tasks-main_task:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 8px 16px rgba(21, 44, 84, 0.09);
+}
+
+.tasks-main_task-text {
+    flex: 1;
+    font-size: 0.98rem;
+    color: #1f3550;
+    line-height: 1.4;
+    word-break: break-word;
+}
+
+.tasks-main_task-editinput {
+    flex: 1;
+}
+
+.tasks-main_task-actions {
+    display: inline-flex;
+    gap: 2px;
+}
+
+.task-action {
+    border-radius: 8px !important;
+}
+
+.task-action-edit {
+    color: #2b6fb2 !important;
+}
+
+.task-action-save {
+    color: #1f7b46 !important;
+}
+
+.task-action-cancel,
+.task-action-delete {
+    color: #c13a3a !important;
+}
+
+.tasks-main_empty {
+    border: 1px dashed #b9cae5;
+    border-radius: 12px;
+    background: #f8fbff;
+    color: var(--muted);
+    text-align: center;
+    padding: 24px 16px;
+}
+
+@media screen and (max-width: 768px) {
+    .tasks {
+        padding: 18px 10px;
+    }
+
+    .tasks-shell {
+        padding: 16px;
+        border-radius: 16px;
+    }
+
+    .tasks-main_form {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .tasks-main_form-button {
+        width: 100%;
+    }
+}

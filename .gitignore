@@ -21,3 +21,24 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
+
+# env (shared/local overrides)
+.env
+.env.*
+!.env.example
+
+# editor/ide
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# caches
+.cache/
+.eslintcache
+
+# runtime
+*.pid
+*.seed
+*.pid.lock
