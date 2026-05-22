@@ -1,70 +1,163 @@
-# Getting Started with Create React App
+# Reactex – AI React Developer Assistant
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Reactex is a demonstration project showing how modern frontend applications can integrate lightweight AI agents into real-world user interfaces.
 
-## Available Scripts
+The project combines **React**, **Material UI**, and a shared **AI Gateway Backend** to create a contextual AI chat focused primarily on React development, frontend engineering, and technical workflows.
 
-In the project directory, you can run:
+The goal is not to build a full AI platform, but to demonstrate:
 
-### `npm start`
+- AI integration in frontend applications
+- Context-aware conversational interfaces
+- Reusable chat widget architecture
+- API communication patterns
+- Error handling and resilience
+- Modern React UI patterns
+- Lightweight AI specialization through system prompts
+- Shared backend architecture across multiple frontend technologies
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
 
-### `npm test`
+### AI Developer Chat
+Context-aware assistant with soft specialization in:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- React
+- TypeScript
+- JavaScript
+- Hooks
+- Components
+- State management
+- Routing
+- Frontend architecture
+- API integration
+- UI implementation
+- Deployment workflows
 
-### `npm run build`
+The assistant remains helpful for general topics while prioritizing frontend-related discussions.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Persistent Conversation Context
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The chat preserves history between messages:
 
-### `npm run eject`
+User → AI → User → AI
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+instead of treating every request as an isolated prompt.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+This enables:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- follow-up questions
+- iterative problem solving
+- longer technical discussions
+- more natural AI interaction
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+### Reusable AI Widget Architecture
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+The AI widget includes:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+✓ Floating launcher  
+✓ Modal chat interface  
+✓ Message history  
+✓ Context preservation  
+✓ Export chat (.txt)  
+✓ Regenerate responses  
+✓ Copy responses  
+✓ Code block rendering  
+✓ Mobile support  
+✓ Loading states  
+✓ Error handling  
+✓ Confirmation dialogs
 
-### Code Splitting
+Designed as a reusable pattern for other frontend projects.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## Architecture
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```txt
+React Frontend
+      ↓
+AI Chat Widget
+      ↓
+EVAISYS AI Gateway Backend
+      ↓
+LLM Provider
+```
 
-### Making a Progressive Web App
+The frontend does not communicate directly with LLM providers.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+All AI requests pass through a shared backend gateway responsible for:
 
-### Advanced Configuration
+- authentication
+- rate limiting
+- project separation
+- request normalization
+- provider abstraction
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+## Technology Stack
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Frontend:
 
-### `npm run build` fails to minify
+- React
+- Material UI
+- JavaScript
+- CRA
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+AI:
+
+- Shared EVAISYS AI Gateway
+- Context-aware chat
+- Prompt specialization
+- Multi-project architecture
+
+---
+
+## Purpose
+
+Reactex is intentionally lightweight.
+
+The project serves as a practical demonstration of:
+
+**Frontend + AI + Architecture + UX**
+
+rather than a production AI platform.
+
+---
+
+## Related Projects
+
+The same AI Gateway architecture is reused across multiple frontend demonstrations:
+
+- Angularex → Angular + AI
+- Reactex → React + AI
+- Vuetex → Vue/Quasar + AI
+
+This allows experimenting with AI integration patterns across frameworks while keeping backend logic centralized.
+
+---
+
+## Future Improvements
+
+Potential future enhancements:
+
+- Streaming responses
+- Better context compression
+- Multi-session history
+- AI memory layer
+- RAG integration
+- Specialized developer agents
+- Voice interaction
+
+---
+
+## Status
+
+Current state:
+
+**Demo project / Active experimentation**
