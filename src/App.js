@@ -8,6 +8,7 @@ import Contact from './components/Contact/Contact';
 import Tasks from './components/Tasks/Tasks';
 import About from './components/About/About';
 import Projects from './components/Projects/Projects';
+import ChatWidget from './components/ChatWidget/ChatWidget';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
             <Route path="/projects" component={Projects} exact />
         </Switch>
       <Footer/>
+      <ChatWidget />
     </div>
   );
 }
