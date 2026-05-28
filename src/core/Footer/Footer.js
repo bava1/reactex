@@ -18,7 +18,7 @@ const Footer = () => {
             <h3>Used to create technology</h3>
             <img src={logo1} className="footer-main_logo1" alt={logo1}/>
             <h3>Project source code</h3>
-            <a href="https://gitlab.com/bava/reacton" target="_blank"><img src={github} className="footer-main_logo2" alt={github}/></a> 
+            <a href="https://github.com/bava1/reactex" target="_blank"><img src={github} className="footer-main_logo2" alt={github}/></a> 
         </div>
     </footer>
   )
